@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>제3회 초급 현장지휘관 자격 인증평가 – 보조강사 모집</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+  :root {
+    --bg: #1e2233;
+    --card: #252a3d;
+    --border: #353c55;
+    --white: #f0f2f8;
+    --muted: #8892a4;
+    --blue: #5b9cf6;
+    --green: #5ec97e;
+    --gold: #f0a500;
+    --red: #e05252;
+    --orange: #f07840;
+    --cyan: #4ecdc4;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--white);
+    font-size: 19px;
+    line-height: 1.65;
+    padding: 16px 14px 40px;
+  }
+
+  .title-block {
+    text-align: center;
+    padding: 20px 8px 18px;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 14px;
+  }
+  .title-bracket { font-size: 14px; color: var(--muted); margin-bottom: 6px; }
+  .title-main { font-size: 24px; font-weight: 900; line-height: 1.5; }
+  .title-main .accent { color: var(--gold); }
+  .title-sub { margin-top: 6px; font-size: 22px; font-weight: 700; }
+
+  .section { margin-bottom: 10px; }
+  .section-title { font-size: 15px; font-weight: 700; letter-spacing: 2px; color: var(--muted); margin-bottom: 8px; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 14px;
+    margin-bottom: 10px;
+  }
+
+  .schedule-row { padding: 8px 0; border-bottom: 1px solid var(--border); }
+  .schedule-row:last-child { border-bottom: none; }
+
+  .schedule-label { font-size: 22px; font-weight: 900; margin-bottom: 3px; }
+  .schedule-label.blue { color: var(--blue); }
+  .schedule-label.green { color: var(--green); }
+
+  .schedule-value { font-size: 20px; font-weight: 700; }
+  .schedule-value.blue { color: var(--blue); }
+  .schedule-value.green { color: var(--green); }
+
+  .schedule-week { display: inline; font-size: 15px; font-weight: 600; margin-left: 8px; opacity: 0.75; }
+  .schedule-week.blue { color: var(--blue); }
+  .schedule-week.green { color: var(--green); }
+
+  .schedule-meta { font-size: 19px; font-weight: 700; color: var(--cyan); }
+
+  .vote-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+  }
+  .vote-box p { font-size: 17px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .vote-text { color: var(--gold); }
+  .vote-deadline { font-size: 17px; margin-top: 4px; color: var(--muted); }
+
+  .info-row { padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .info-row:last-child { border-bottom: none; }
+  .info-label { font-size: 22px; font-weight: 900; margin-bottom: 4px; }
+  .info-label.blue { color: var(--blue); }
+  .info-label.green { color: var(--green); }
+  .info-text { font-size: 19px; line-height: 1.65; }
+  .info-sub { font-size: 19px; margin-top: 4px; }
+  .duty { color: var(--orange); font-weight: 700; }
+
+  .secret-label { color: var(--red); font-weight: 700; }
+
+  .proc-note { font-size: 16px; color: var(--muted); margin-bottom: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  .num-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .num-item:last-child { border-bottom: none; }
+  .num-circle {
+    min-width: 26px; height: 26px;
+    border-radius: 50%;
+    background: var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700;
+    color: var(--white);
+    margin-top: 2px;
+  }
+
+  .security-banner {
+    background: linear-gradient(135deg, #3a1010, #4a1515);
+    border: 2.5px solid var(--red);
+    border-radius: 12px;
+    padding: 18px 14px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--red);
+    letter-spacing: 1px;
+    box-shadow: 0 0 18px rgba(224, 82, 82, 0.35);
+  }
+</style>
+</head>
+<body>
+
+<div class="title-block">
+  <div class="title-bracket">부산소방학교 지휘역량강화센터</div>
+  <div class="title-main">
+    제3회 <span class="accent">초급</span> 현장지휘관<br>
+    <span class="accent">자격 인증평가</span>
+  </div>
+  <div class="title-sub">보조강사 모집</div>
+</div>
+
+<!-- 일정 -->
+<div class="section">
+  <div class="section-title">▪ 일정</div>
+  <div class="card">
+    <div class="schedule-row">
+      <div class="schedule-label blue">사전연습</div>
+      <div class="schedule-value blue">6. 29.(월) ~ 7. 3.(금) <span class="schedule-week blue">1주간</span></div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-label green">인증평가</div>
+      <div class="schedule-value green">7. 6.(월) ~ 7. 10.(금) <span class="schedule-week green">1주간</span></div>
+    </div>
+    <div class="schedule-row">
+      <div class="schedule-meta">09:00 ~ 18:00 &nbsp;/&nbsp; 1일 4명 (총 10일간)</div>
+    </div>
+  </div>
+</div>
+
+<!-- 투표 -->
+<div class="vote-box">
+  <p>★ 가능한 날짜에 <span class="vote-text">모두 투표</span> 부탁드립니다. 꼭!</p>
+  <div class="vote-deadline">투표 기한 : 6. 2.(화) 12:00까지</div>
+</div>
+
+<!-- 참여 안내 -->
+<div class="section">
+  <div class="section-title">▪ 참여 안내</div>
+  <div class="card">
+    <div class="info-row">
+      <div class="info-text">되도록 사전연습 참여했던 보조강사 분들이 인증평가에도 참여할 수 있도록 해주세요.<br>→ 1인당 3~4회 참여 가능해야 합니다</div>
+    </div>
+  </div>
+</div>
+
+<!-- 복무처리 및 식사 -->
+<div class="section">
+  <div class="section-title">▪ 복무처리 및 식사</div>
+  <div class="card">
+    <div class="info-row">
+      <div class="info-label blue">사전연습</div>
+      <div class="info-text">
+        부산 – <span class="duty">일근근무 + 출장</span><br>
+        타시도 – <span class="duty">관외출장</span>
+      </div>
+      <div class="info-sub">점심 : 개인적으로 해결</div>
+    </div>
+    <div class="info-row">
+      <div class="info-label green">인증평가</div>
+      <div class="info-text">
+        부산 – <span class="duty">일근근무 + 출장</span><br>
+        타시도 – <span class="duty">관외출장</span> + 수당 6만원
+      </div>
+      <div class="info-sub">점심 : 반드시 학교 식당 이용 (1식 5천원)</div>
+    </div>
+  </div>
+</div>
+
+<!-- 진행 절차 -->
+<div class="section">
+  <div class="section-title">▪ 진행 절차 &nbsp;<span class="secret-label">[ 비공개 ]</span></div>
+  <div class="card">
+    <div class="proc-note">※ 계획 공문 시달 시 성명·일정 미기재 → 아래 절차로 진행</div>
+    <div class="num-item">
+      <div class="num-circle">1</div>
+      <div>성명·일정 문자로 개별 통보 받으시면 (양성과 발송 예정)</div>
+    </div>
+    <div class="num-item">
+      <div class="num-circle">2</div>
+      <div>센터장(행정과)에 카톡 통보 내용 보여드리고 복무처리</div>
+    </div>
+    <div class="num-item">
+      <div class="num-circle">3</div>
+      <div>평가 후 결과 공문 시달 시 (성명·일정 기재) e사람 붙임 후 변경보고</div>
+    </div>
+  </div>
+</div>
+
+<!-- 보안 -->
+<div class="security-banner">
+  ★ 개인 참석 관련 보안 철저 !!
+</div>
+
+</body>
+</html>
