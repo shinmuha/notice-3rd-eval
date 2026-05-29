@@ -45,16 +45,21 @@
 
   .section { margin-bottom: 8px; }
   .section-title {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 900;
     letter-spacing: 1px;
-    color: var(--white);
-    background: var(--border);
+    color: #c8cdd8;
     border-radius: 8px;
+    border: 3px solid var(--border);
     padding: 8px 12px;
     margin-bottom: 6px;
     display: block;
+    text-align: center;
   }
+  .sec-schedule .section-title { border-color: #3a5068; background: #1e2d3d; }
+  .sec-attend .section-title { border-color: #3a5a3a; background: #1e2d1e; }
+  .sec-duty .section-title { border-color: #5a3a20; background: #2d1e10; }
+  .sec-proc .section-title { border-color: #4a2a5a; background: #1e1028; }
 
   .card {
     border: 1px solid var(--border);
@@ -163,7 +168,7 @@
 
 <!-- 일정 -->
 <div class="section sec-schedule">
-  <div class="section-title">▪ 일정</div>
+  <div class="section-title">〈 일정 〉</div>
   <div class="card">
     <div class="schedule-row">
       <div class="schedule-label blue">사전연습</div>
@@ -182,7 +187,7 @@
 
 <!-- 참여 안내 -->
 <div class="section sec-attend">
-  <div class="section-title">▪ 참여 안내</div>
+  <div class="section-title">〈 참여 안내 〉</div>
 
   <!-- 투표 -->
   <div class="vote-box">
@@ -199,7 +204,7 @@
 
 <!-- 복무처리 및 식사 -->
 <div class="section sec-duty">
-  <div class="section-title">▪ 복무처리 및 식사</div>
+  <div class="section-title">〈 복무처리 및 식사 〉</div>
   <div class="card">
     <div class="info-row">
       <div class="info-label blue">사전연습</div>
@@ -222,7 +227,7 @@
 
 <!-- 진행 절차 -->
 <div class="section sec-proc">
-  <div class="section-title">▪ 진행 절차 &nbsp;<span class="secret-label">[ 공문 비공개 사항 ]</span></div>
+  <div class="section-title">〈 진행 절차 〉 <span class="secret-label">[ 공문 비공개 사항 ]</span></div>
   <div class="card">
     <div class="proc-note">※ 계획 공문 시달 시 성명·일정 미기재 → 아래 절차로 진행</div>
     <div class="num-item">
