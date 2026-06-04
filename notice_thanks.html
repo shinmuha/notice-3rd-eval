@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>보조강사 모집 완료</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+  :root {
+    --bg: #1e2233;
+    --card: #252a3d;
+    --border: #353c55;
+    --white: #f0f2f8;
+    --muted: #8892a4;
+    --gold: #f0a500;
+    --green: #5ec97e;
+    --blue: #5b9cf6;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--white);
+    font-size: 19px;
+    line-height: 1.75;
+    padding: 20px 16px 48px;
+  }
+
+  /* 타이틀 */
+  .title-block {
+    text-align: center;
+    padding: 24px 8px 20px;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 18px;
+  }
+  .title-bracket { font-size: 14px; color: var(--muted); margin-bottom: 8px; }
+  .title-main { font-size: 22px; font-weight: 900; line-height: 1.5; }
+  .title-main .accent { color: var(--gold); }
+  .complete-badge {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 22px;
+    background: var(--gold);
+    color: #1e2233;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 30px;
+    letter-spacing: 2px;
+  }
+
+  /* 카드 */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .accent-gold { color: var(--gold); font-weight: 700; }
+  .accent-green { color: var(--green); font-weight: 700; }
+  .accent-blue { color: var(--blue); font-weight: 700; }
+
+  /* 선정 안내 박스 */
+  .info-box {
+    background: #1e2d1e;
+    border: 2px solid #3a5a3a;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  .info-box .label {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--green);
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+
+  /* 재참여 박스 */
+  .next-box {
+    background: #1a1e2e;
+    border: 2px solid #3a4a6a;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  .next-box .label {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+
+  /* 서명 */
+  .signature {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 16px;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+  .signature strong {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 900;
+  }
+</style>
+</head>
+<body>
+
+<div class="title-block">
+  <div class="title-bracket">부산소방학교 지휘역량강화센터</div>
+  <div class="title-main">제3회 <span class="accent">초급 현장지휘관</span><br><span class="accent">자격 인증평가</span> 보조강사</div>
+  <div class="complete-badge">✔ 모집 완료</div>
+</div>
+
+<!-- 감사 인사 -->
+<div class="card">
+  바쁘신 중에도 지원해 주신 모든 분들께 <span class="accent-gold">진심으로 감사드립니다.</span>
+</div>
+
+<!-- 선정 안내 -->
+<div class="info-box">
+  <div class="label">▪ 선정 결과</div>
+  지원해 주신 모든 분들이 참여하실 수 있도록 선정하였으며, 개인별 <span class="accent-green">3~5회</span> 참여로 일정을 구성하였습니다.<br>
+  선정된 분들께는 <span class="accent-green">개별 통지</span> 예정입니다. (비공개)
+</div>
+
+<!-- 미선정자 -->
+<div class="next-box">
+  <div class="label">▪ 이번에 함께하지 못한 분들께</div>
+  다음 기회에 <span class="accent-blue">꼭 함께해 주시길</span> 부탁드립니다.
+</div>
+
+<!-- 마무리 -->
+<div class="card">
+  모든 보조강사 분들 건강하시고 행복하시길 바랍니다. 항상 응원하겠습니다. 🙏
+</div>
+
+<!-- 서명 -->
+<div class="signature">
+  부산소방학교<br>
+  <strong>지휘역량강화센터</strong>
+</div>
+
+</body>
+</html>
